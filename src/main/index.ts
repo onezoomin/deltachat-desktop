@@ -5,6 +5,8 @@ import { app as rawApp, dialog } from 'electron'
 import rc from './rc'
 import { VERSION, GIT_REF, BUILD_TIMESTAMP } from '../shared/build-info'
 import type { EventEmitter } from 'events'
+import contextMenu from './electron-context-menu'
+import { findOutIfWeAreRunningAsAppx } from './isAppx'
 
 const app = rawApp as ExtendedAppMainProcess
 app.rc = rc
@@ -188,8 +190,5 @@ app.on('web-contents-created', (_e, contents) => {
     return { action: 'deny' }
   })
 })
-
-import contextMenu from './electron-context-menu'
-import { findOutIfWeAreRunningAsAppx } from './isAppx'
 
 contextMenu()
