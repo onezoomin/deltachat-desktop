@@ -8,6 +8,7 @@
 - Update inApp help (3.1.2022)
 
 ### Fixed
+- fix opening logfolder and logfile in appx
 - Fix overflow in long links inside quotes @naomiceron #2467
 - Show error if writing an attachment fails @IrvinLara9 #2479
 - Fix connectivity view title @IrvinLara9 #2480
