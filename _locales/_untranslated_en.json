@@ -7,5 +7,8 @@
   },
   "attachment-images": {
     "message": "Attached image"
+  },
+  "menu_show_account_sidebar": {
+    "message": "Show account sidebar"
   }
 }

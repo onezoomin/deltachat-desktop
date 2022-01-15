@@ -22,6 +22,7 @@ export function getDefaultState(): AppState {
       activeTheme: 'system',
       minimizeToTray: false,
       syncAllAccounts: true,
+      showAccountSidebar: false
     },
     logins: [],
   }

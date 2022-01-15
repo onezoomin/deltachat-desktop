@@ -49,6 +49,7 @@ export interface DesktopSettings {
   activeTheme: string
   minimizeToTray: boolean
   syncAllAccounts: boolean
+  showAccountSidebar: boolean
 }
 
 export interface AppState {
