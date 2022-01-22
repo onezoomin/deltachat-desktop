@@ -406,7 +406,7 @@ class ChatStore extends Store<ChatStoreState> {
       let messagePages: MessagePage[] = []
       if (messageIds.length !== 0) {
         oldestFetchedMessageIndex = Math.max(jumpToMessageIndex - (PAGE_SIZE / 2), 0)
-        newestFetchedMessageIndex = Math.min(oldestFetchedMessageIndex + (PAGE_SIZE / 2), messageIds.length - 1)
+        newestFetchedMessageIndex = Math.min(jumpToMessageIndex + (PAGE_SIZE / 2), messageIds.length - 1)
 
         const messageIdsToFetch = messageIds.slice(
           oldestFetchedMessageIndex,
