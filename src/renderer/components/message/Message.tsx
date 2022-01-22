@@ -377,6 +377,7 @@ const Message = (props: {
         { forwarded: message.isForwarded },
         { 'has-html': hasHTML }
       )}
+      id={message.id.toString()}
     >
       {showAuthor &&
         direction === 'incoming' &&
